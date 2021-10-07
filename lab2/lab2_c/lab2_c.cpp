@@ -43,6 +43,6 @@ int main()
 
     if (max_second > max_first && min_second > min_first)
         cout << "It is possible to fit the first rectangle in the second one.";
-    else cout << "It is possible to fit the first rectangle in the second one.";
+    else cout << "It is impossible to fit the first rectangle in the second one.";
 }
 
