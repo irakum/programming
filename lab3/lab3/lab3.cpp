@@ -17,11 +17,11 @@ int main()
     y = (y0 + 1) / (y0 + 2);
 
     // розрахування значення у з заданою точністю
-    do
+    while (abs(y - y0) >= precision)
     {
         y0 = y;
         y = (y0 + 1) / (y0 + 2);
-    } while (abs(y-y0) >= precision);
+    }
 
     cout << "Final value: " << y;  // виведення кінцевого значення у
 }
