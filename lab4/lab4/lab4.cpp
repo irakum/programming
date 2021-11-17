@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     float i, n;
-    cout << "Enter number of repetition: ";
+    cout << "Enter number of repetitions: ";
     cin >> n;
 
     float x, y, sum;
