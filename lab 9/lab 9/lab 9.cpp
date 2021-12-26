@@ -31,7 +31,10 @@ int find_same(char* string) {
     char* left = strtok_s(string, seps, &next);
     while (left != NULL)
     {
-        n += first_last(left);
+        if (first_last(left)) {
+            n += 1;
+            printf("%s\n", left);
+        }
         left = strtok_s(NULL, seps, &next);
     }
 
