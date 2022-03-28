@@ -35,10 +35,14 @@ vector<string> read_file(const string& name){
     return text;
 }
 
-void output(const vector<string>& text){
-    for (const auto& line: text) {
-        cout << line << endl;
+void output(const string& filename){
+    ifstream file(filename);
+    string s;
+    while (!file.eof()){
+        getline(file, s);
+        cout << s << endl;
     }
+    file.close();
 }
 
 vector<string> change_text(const vector<string>& text){

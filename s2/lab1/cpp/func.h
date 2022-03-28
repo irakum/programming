@@ -24,4 +24,4 @@ vector<string> read_file(const string& name);
  */
 vector<string> change_text(const vector<string>& text);
 
-void output(const vector<string>& text);
+void output(const string& filename);
