@@ -35,10 +35,10 @@ vector<string> read_file(const string& name){
     return text;
 }
 
-void output(const string& filename){
+void output(const string& filename) {
     ifstream file(filename);
     string s;
-    while (!file.eof()){
+    while (!file.eof()) {
         getline(file, s);
         cout << s << endl;
     }

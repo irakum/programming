@@ -5,7 +5,7 @@ int main() {
     vector<string> input_text = get_text();
     get_file("Text.txt", input_text);
     vector<string> text = read_file("Text.txt");
-    cout << "Text in the first file:" << endl;
+    cout << "Text in the first file: " << endl;
     output("Text.txt");
 
     vector<string> second_text = change_text(text);

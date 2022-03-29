@@ -18,7 +18,7 @@ void get_file(const string& name, const vector<string>& text);
  * @return text from the selected file
  */
 vector<string> read_file(const string& name);
-/** Puts len of the string in the beginning of each one
+/** Puts len  of the string in the beginning of each one
  * @param text started text
  * @return changed text
  */
