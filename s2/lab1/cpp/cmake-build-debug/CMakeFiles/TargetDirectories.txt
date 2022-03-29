@@ -1,3 +1,0 @@
-D:/1year/PB/labs/laboratorna 1/s2/lab1/cpp/cmake-build-debug/CMakeFiles/cpp.dir
-D:/1year/PB/labs/laboratorna 1/s2/lab1/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/1year/PB/labs/laboratorna 1/s2/lab1/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
