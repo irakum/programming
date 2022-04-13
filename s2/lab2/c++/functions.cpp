@@ -92,13 +92,13 @@ string get_gender(){
     string gen;
     cin >> gen;
     cin.ignore();
-    while (true) {
-        if (gen == "M" or gen == "m") return "male";
-        else if (gen == "F" or gen == "f") return "female";
+    while (not(gen == "M" or gen == "m" or gen == "F" or gen == "f")) {
         cout << "Wrong input. Enter letter M for male or F for female: ";
         cin >> gen;
         cin.ignore();
     }
+    if (gen == "M" or gen == "m") return "male";
+    else if (gen == "F" or gen == "f") return "female";
 }
 
 string get_day(){
