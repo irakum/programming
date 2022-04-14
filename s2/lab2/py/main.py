@@ -1,7 +1,7 @@
 import func
 
 
-if __name__ == '__main__':
+def main():
     func.create_file('All.txt')
     print('List of all workers:')
     func.output_file('All.txt')
@@ -10,3 +10,7 @@ if __name__ == '__main__':
     func.output_file('Over.txt')
     print('List of workers under 40:')
     func.output_file('Under.txt')
+
+
+if __name__ == '__main__':
+    main()

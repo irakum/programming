@@ -147,12 +147,12 @@ string get_number(){
     cout << "Employee number (8 digits): ";
     cin >> num;
     cin.ignore();
-    while (num.length() != 8){                  //check if there are 8 chars
+    while (num.length() != 8){
         cout << "Wrong length. Enter 8 digits: ";
         cin >> num;
         cin.ignore();
     }
-    while (!is_number(num)){                   //check if all chars are digits
+    while (!is_number(num)){
         cout << "All chars have to be digits. Enter 8 digits: ";
         cin >> num;
         cin.ignore();
