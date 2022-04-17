@@ -7,6 +7,8 @@ def input_text():
     while ord(line[0]) != end_of_text:
         line = input()
         lines.append(line)
+        if line == "":
+            line = " "
     return lines[:-1]
 
 

@@ -34,7 +34,7 @@ void get_first(const string& name) {
     for (int i = 0; i < text.size() - 1; ++i) {                    //add all lines except for the last one
         new_file << text[i] << '\n';
     }
-    new_file << text.back();                                      //add last line(so the file woudn't end with '\n')
+    new_file << text.back();          //add last line(so the file woudn't end with '\n')
     new_file.close();
 }
 
