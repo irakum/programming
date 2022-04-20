@@ -98,7 +98,7 @@ string get_gender(){
         cin.ignore();
     }
     if (gen == "M" or gen == "m") return "male";
-    else if (gen == "F" or gen == "f") return "female";
+    else return "female";
 }
 
 string get_day(){
