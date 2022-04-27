@@ -55,8 +55,26 @@ build CMakeFiles/cpp.dir/main.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/labs
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir
 
-build CMakeFiles/cpp.dir/class.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/labs/laboratorna$ 1/s2/lab3/cpp/class.cpp || cmake_object_order_depends_target_cpp
-  DEP_FILE = CMakeFiles\cpp.dir\class.cpp.obj.d
+build CMakeFiles/cpp.dir/Equation.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/labs/laboratorna$ 1/s2/lab3/cpp/Equation.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles\cpp.dir\Equation.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+
+build CMakeFiles/cpp.dir/EqList.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/labs/laboratorna$ 1/s2/lab3/cpp/EqList.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles\cpp.dir\EqList.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+
+build CMakeFiles/cpp.dir/Outputter.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/labs/laboratorna$ 1/s2/lab3/cpp/Outputter.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles\cpp.dir\Outputter.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+
+build CMakeFiles/cpp.dir/func.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/labs/laboratorna$ 1/s2/lab3/cpp/func.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles\cpp.dir\func.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir
@@ -69,7 +87,7 @@ build CMakeFiles/cpp.dir/class.cpp.obj: CXX_COMPILER__cpp_Debug D$:/1year/PB/lab
 #############################################
 # Link the executable cpp.exe
 
-build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.obj CMakeFiles/cpp.dir/class.cpp.obj
+build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.obj CMakeFiles/cpp.dir/Equation.cpp.obj CMakeFiles/cpp.dir/EqList.cpp.obj CMakeFiles/cpp.dir/Outputter.cpp.obj CMakeFiles/cpp.dir/func.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cpp.dir
