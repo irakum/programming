@@ -57,7 +57,7 @@ int get_amount(){
     cout << "Enter number of workers to add: ";
     cin >> num;
     cin.ignore();
-    while (!is_number(num) or stoi(num) < 1){
+    while (!is_number(num) or stoi(num) < 0){
         cout << "Enter a positive integer: ";
         cin >> num;
         cin.ignore();
