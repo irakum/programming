@@ -4,6 +4,7 @@
 class Outputter {
     EqList equations;
 public:
+    void setOut();
     void printAll();
     void printNoSol();
 };

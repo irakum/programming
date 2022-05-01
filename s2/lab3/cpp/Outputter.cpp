@@ -2,20 +2,28 @@
 
 void Outputter::printAll() {
     vector<Equation> equs = equations.getAll();
-    cout << "List of equations:\n";
+    cout << "List of equations:"<<endl;
     for (int i = 0; i < equs.size(); ++i) {
         cout << i+1 << ") ";
         equs[i].getEquation();
         //equs[i].getCoefs();
-        cout << ";\n";
+        cout << ";"<<endl;
     }
 }
 
 void Outputter::printNoSol() {
-    cout << "Numbers of equations with no solution:\n";
     vector<int> nums = equations.getNoSol();
-    for (int i = 0; i < nums.size()-1; ++i) {
-        cout << nums[i] << ", ";
+    if (nums.empty()) cout << "All equations have at least one solution." << endl;
+    else {
+        cout << "Numbers of equations with no solution:" << endl;
+        for (int i = 0; i < nums.size() - 1; ++i) {
+            cout << nums[i] << ", ";
+        }
+        cout << nums.back() << '.' << endl;
     }
-    cout << nums.back() << '.';
+}
+
+void Outputter::setOut() {
+    equations.setEqList(EqList::genEqList());
+    equations.setNoSol(equations.genNoSol());
 }

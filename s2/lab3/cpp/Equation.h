@@ -5,9 +5,9 @@
 using namespace std;
 
 class Equation {
-    double a = 0, b = 0, c = 0;
+    double a=0, b=0, c=0;
 public:
-    Equation();
+    void setABC();
     void getCoefs() const;
     void getEquation() const;
     bool hasSolution() const;

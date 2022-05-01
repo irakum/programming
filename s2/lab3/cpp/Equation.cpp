@@ -3,30 +3,17 @@
 
 using namespace std;
 
-Equation::Equation() {
-    string aa, bb, cc;
-    cout << "Enter first coefficient: "; cin >> aa;
-    cin.ignore();
-    while (!is_double(aa)){
-        cout << "Enter a valid float number: "; cin >> aa;
-        cin.ignore();
+void Equation::setABC() {
+    vector<string> coefs = {"0", "0", "0"};
+    coefs = input_coefs(coefs);
+    while (coefs[0] == "0" and coefs[1] == "0"){
+        cout << "Invalid input. Both first and second coefficients can't be 0. Try again." << endl;
+        coefs = input_coefs(coefs);
     }
-    cout << "Enter second coefficient: "; cin >> bb;
-    cin.ignore();
-    while (!is_double(bb)){
-        cout << "Enter a valid float number: "; cin >> bb;
-        cin.ignore();
-    }
-    cout << "Enter third coefficient: "; cin >> cc;
-    cin.ignore();
-    while (!is_double(cc)){
-        cout << "Enter a valid float number: "; cin >> cc;
-        cin.ignore();
-    }
-    a = stod(aa);
-    b = stod(bb);
-    c = stod(cc);
-    cout << "Recorded\n";
+    a = stod(coefs[0]);
+    b = stod(coefs[1]);
+    c = stod(coefs[2]);
+    cout << "Recorded" << endl;
 }
 
 void Equation::getCoefs() const {
@@ -34,7 +21,8 @@ void Equation::getCoefs() const {
 }
 
 void Equation::getEquation() const {
-    cout << a << "x^2 + (" << b << ")x + (" << c << ") = 0";
+    //printf("(%f)x^2 + (%f)x + (%f) = 0", a, b, c);
+    cout << "(" << a << ")x^2 + (" << b << ")x + (" << c << ") = 0";
 }
 
 bool Equation::hasSolution() const {

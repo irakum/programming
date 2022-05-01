@@ -1,26 +1,28 @@
 #include "EqList.h"
 
-EqList::EqList() {
-    all_eqs = genEqList();
-    no_sol = genNoSol();
-}
-
 vector<Equation> EqList::genEqList() {
     vector<Equation> equs;
     int n = get_number();
     for (int i = 0; i < n; ++i) {
         Equation eq;
+        eq.setABC();
         equs.push_back(eq);
+        //cout << "Recorded\n";
     }
     return equs;
 }
+
 vector<int> EqList::genNoSol() {
     vector<int> vec;
     for (int i = 0; i < all_eqs.size(); ++i) {
-        if (!all_eqs[i].hasSolution()) {vec.push_back(i + 1);}
+        if (!all_eqs[i].hasSolution()) vec.push_back(i + 1);
     }
     return vec;
 }
+
+void EqList::setEqList(vector<Equation> vec) {all_eqs = vec;}
+
+void EqList::setNoSol(vector<int> vec) {no_sol = vec;}
 
 vector<Equation> EqList::getAll() {return all_eqs;}
 
