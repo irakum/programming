@@ -43,7 +43,7 @@ def get_second(second, first):
 def output(name):
     file = open(name, 'r')
     text = file.read()
-    print(text);
+    print(text)
     file.close()
 
 

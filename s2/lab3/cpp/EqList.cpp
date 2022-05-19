@@ -4,10 +4,9 @@ vector<Equation> EqList::genEqList() {
     vector<Equation> equs;
     int n = get_number();
     for (int i = 0; i < n; ++i) {
-        Equation eq;
-        eq.setABC();
+        Equation eq(Equation::inputABC());
+        cout << "Recorded" << endl;
         equs.push_back(eq);
-        //cout << "Recorded\n";
     }
     return equs;
 }

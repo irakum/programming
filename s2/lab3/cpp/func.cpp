@@ -35,7 +35,7 @@ int get_number(){
     return stoi(num);
 }
 
-vector<string> input_coefs(vector<string> vec){
+vector<string> input_coefs(){
     vector<string> res;
     for (int i = 0; i < 3; ++i) {
         string coef;
